@@ -13,7 +13,7 @@ jobs:
     - name: Build Images for dev
       run: |
           docker build -t test .
-          docker run -d -p 80:80 
+          docker run -d -p 80:80 test
           docker ps
     - uses: azure/container-scan@v0
       with:
